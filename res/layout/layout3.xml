@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/namaTambahObat"
+        android:layout_below="@+id/namaTambahObat"
+        android:layout_marginTop="14dp"
+        android:text="Deskripsi Obat" />
+
+    <EditText
+        android:id="@+id/deskripsi_obat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/button_tambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/deskripsi_obat"
+        android:layout_below="@+id/deskripsi_obat"
+        android:layout_marginTop="15dp"
+        android:onClick="klikTambah"
+        android:text="Tambah" />
+
+    <EditText
+        android:id="@+id/namaTambahObat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/namaTambahObat"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="16dp"
+        android:text="Nama Obat" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="45dp"
+        android:text="Tambah Obat" />
+
+</RelativeLayout>
